@@ -6,13 +6,11 @@ function App() {
     const [counter, setCounter] = useState(0)
 
     const addValue = () => {
-      setCounter(counter+1);
-      console.log(counter);
+      setCounter((prevCounter) => prevCounter + 1);
     }
 
     const removeValue = () => {
-      setCounter(counter-1);
-      console.log(counter);
+      setCounter((prevCounter) => prevCounter - 1);
     }
 
    return (
